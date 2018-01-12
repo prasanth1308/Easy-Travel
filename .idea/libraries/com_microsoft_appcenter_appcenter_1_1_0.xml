@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.microsoft.appcenter:appcenter-1.1.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/appcenter-1.1.0.aar/04f90ada34cce4899c6ffb1ea795e5e9/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/appcenter-1.1.0.aar/04f90ada34cce4899c6ffb1ea795e5e9/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.microsoft.appcenter/appcenter/1.1.0/b92941a08b4db1b2f233a5191f7157a79d8ac228/appcenter-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

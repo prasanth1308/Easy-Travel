@@ -6,6 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.widget.Toast;
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        AppCenter.start(getApplication(), "35085b09-cca1-44d7-b70f-322197f2960f",
+                Analytics.class, Crashes.class);
         setContentView(R.layout.activity_main);
         boolean firstStart = PreferenceManager.getDefaultSharedPreferences(this)
                 .getBoolean(PREF_KEY_FIRST_START, true);
