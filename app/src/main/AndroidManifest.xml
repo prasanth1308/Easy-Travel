@@ -16,8 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AppIntroActivity"></activity>
-        <activity android:name=".SplashActivity"></activity>
+        <activity android:name=".AppIntroActivity" />
+        <activity android:name=".SplashActivity" />
+        <activity android:name=".WelcomeActivity"></activity>
     </application>
 
 </manifest>

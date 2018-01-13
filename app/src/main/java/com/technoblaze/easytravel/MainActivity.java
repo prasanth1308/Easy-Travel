@@ -5,6 +5,8 @@ import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 import com.microsoft.appcenter.AppCenter;
 import com.microsoft.appcenter.analytics.Analytics;
@@ -24,10 +26,20 @@ public class MainActivity extends AppCompatActivity {
         boolean firstStart = PreferenceManager.getDefaultSharedPreferences(this)
                 .getBoolean(PREF_KEY_FIRST_START, true);
 
+        Button mEmailSignInButton = (Button) findViewById(R.id.next_button);
+        mEmailSignInButton.setOnClickListener(new View.OnClickListener() {
+            // @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, WelcomeActivity.class);
+                startActivity(intent);
+            }
+        });
+
         if (firstStart) {
             Intent intent = new Intent(this, AppIntroActivity.class);
             startActivityForResult(intent, REQUEST_CODE_INTRO);
         }
+
     }
 
     @Override

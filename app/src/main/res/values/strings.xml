@@ -81,4 +81,8 @@
     <string name="description_canteen_intro2" translatable="false">Search and compare hotel near you. Instant booking</string>
     <string name="description_canteen_intro3" translatable="false">Book a cab, compare and ride, UBER, OLA, etc</string>
     <string name="label_button_cta_canteen_intro" translatable="false">Get started</string>
+    <string name="title_activity_welcome">Welcome</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
