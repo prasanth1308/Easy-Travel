@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="com.heinrichreimersoftware:material-intro-1.6.2">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/material-intro-1.6.2.aar/508e12b1c873b61639f6b0cc6f229184/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/material-intro-1.6.2.aar/508e12b1c873b61639f6b0cc6f229184/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/material-intro-1.6.2.aar/40e2bc3e0216f4a0cb46cd84e346340b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/material-intro-1.6.2.aar/40e2bc3e0216f4a0cb46cd84e346340b/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

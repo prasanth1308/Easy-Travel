@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.technoblaze.easytravel.LoginActivity"
+    tools:showIn="@layout/activity_login">
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_margin"
+            android:paddingRight="@dimen/activity_margin"
+            android:orientation="vertical">
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp" >
+
+                <TextView
+                    android:id="@+id/line1"
+                    style="?android:attr/listSeparatorTextViewStyle"
+                    android:gravity="center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="0dp"
+                    android:padding="0dp"
+                    android:layout_marginTop="12dp"
+                    android:background="#e6e4e4" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:text="Connect with"
+                    android:gravity="center|center|top"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:id="@+id/line2"
+                    style="?android:attr/listSeparatorTextViewStyle"
+                    android:gravity="center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="12dp"
+                    android:background="#e6e4e4" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp" >
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:theme="@style/FbLogin"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:drawableLeft="@drawable/fb_login_icon"
+                    android:text="@string/action_sign_in_facebook" />
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white"
+                    android:theme="@style/GoogleLogin"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/google_login_32"
+                    android:text="@string/action_sign_in_google" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="0dp" >
+
+                <TextView
+                    android:id="@+id/line3"
+                    style="?android:attr/listSeparatorTextViewStyle"
+                    android:gravity="center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="1dp"
+                    android:padding="0dp"
+                    android:layout_marginTop="12dp"
+                    android:background="#e6e4e4" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    android:text="Or use email address"
+                    android:gravity="center|center|top"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:id="@+id/line4"
+                    style="?android:attr/listSeparatorTextViewStyle"
+                    android:gravity="center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="12dp"
+                    android:background="#e6e4e4" />
+
+            </TableRow>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/email_input_layout"
+                android:theme="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/password_input_layout"
+                android:theme="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleDrawable="@drawable/asl_password_visibility"
+                app:passwordToggleTint="?colorControlNormal"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_password"
+                    android:imeActionId="6"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/forgetPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:clickable="true"
+                android:onClick="click"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:text="FORGET PASSWORD?" />
+
+            <TableRow
+                android:id="@+id/tableRowSignup4"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="DO NOT HAVE AN ACCOUNT?"/>
+
+                <TextView
+                    android:id ="@+id/signUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/floatingLabel"
+                    android:padding="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="SIGNUP"
+                    android:gravity="left"
+                    android:clickable="true"
+                    android:onClick="click"/>
+
+            </TableRow>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

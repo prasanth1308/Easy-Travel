@@ -5,21 +5,42 @@
     android:id="@+id/transitions_container"
     tools:context="com.technoblaze.easytravel.WelcomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/welcomeAuthLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="400dp"
+        android:orientation="vertical"
+        android:visibility="gone">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+        <Button
+            android:id="@+id/welcomeAuthLoginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="false"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_button"
+            android:textStyle="bold"
+            android:text="Login" />
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
-        android:text="Transitions are awesome!"
-        android:textColor="@color/color_accent"
-        android:visibility="gone"/>
+        <Button
+            android:id ="@+id/welcomeAuthSingupButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@android:color/white"
+            android:text="Sign up"
+            android:background="@drawable/rounded_button"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
 
 </FrameLayout>
