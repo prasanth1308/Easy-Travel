@@ -64,9 +64,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             startActivity(intent);
             finish();
         } else {
-            View parentLayout = findViewById(android.R.id.content);
-            Snackbar.make(parentLayout, " Please login to continue", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show();
+            //View parentLayout = findViewById(android.R.id.content);
+            //Snackbar.make(parentLayout, " Please login to continue", Snackbar.LENGTH_LONG)
+                    //.setAction("Action", null).show();
         }
     }
 
@@ -170,10 +170,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
 
-
-
-
-
     @Override
     public boolean onSupportNavigateUp() {
         onBackPressed();
@@ -181,7 +177,19 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     public void click(View view) {
+        Intent intent = null;
+        switch(view.getId()) {
+            case R.id.signUp:
+                intent = new Intent(LoginActivity.this, SignUpActivity.class);
+                break;
+            case R.id.forgetPassword:
+                intent = new Intent(LoginActivity.this, ForgetPasswordActivity.class);
+                break;
+            default:
 
+        }
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
     }
 
     @Override
@@ -201,6 +209,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 break;
 
         }
+
     }
 
     public void showLoading(Boolean isStop){

@@ -53,16 +53,16 @@ public class WelcomeActivity extends AppCompatActivity {
 
 
         if(timeOfDay >= 0 && timeOfDay < 12){
-            Toast.makeText(this, "Good Morning", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "Good Morning " + timeOfDay, Toast.LENGTH_SHORT).show();
             welcomeScreen.setBackgroundResource(R.drawable.day_bg);
         }else if(timeOfDay >= 12 && timeOfDay < 14){
-            Toast.makeText(this, "Good Afternoon", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "Good Afternoon " + timeOfDay, Toast.LENGTH_SHORT).show();
             welcomeScreen.setBackgroundResource(R.drawable.day_bg);
         }else if(timeOfDay >= 14 && timeOfDay < 19){
-            Toast.makeText(this, "Good Evening", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "Good Evening " + timeOfDay, Toast.LENGTH_SHORT).show();
             welcomeScreen.setBackgroundResource(R.drawable.night_bg);
         }else if(timeOfDay >= 19 && timeOfDay < 24){
-            Toast.makeText(this, "Good Night", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "Good Night " + timeOfDay, Toast.LENGTH_SHORT).show();
             welcomeScreen.setBackgroundResource(R.drawable.night_bg);
         }
 
@@ -91,9 +91,9 @@ public class WelcomeActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         } else {
-            View parentLayout = findViewById(android.R.id.content);
-            Snackbar.make(parentLayout, " Please login to continue", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show();
+           // View parentLayout = findViewById(android.R.id.content);
+            //Snackbar.make(parentLayout, " Please login to continue", Snackbar.LENGTH_LONG)
+             //       .setAction("Action", null).show();
         }
     }
 
@@ -105,20 +105,20 @@ public class WelcomeActivity extends AppCompatActivity {
                 PreferenceManager.getDefaultSharedPreferences(this).edit()
                         .putBoolean(PREF_KEY_FIRST_START, false)
                         .apply();
-                Toast toast = Toast
-                        .makeText(WelcomeActivity.this, "RESULT_OK", Toast.LENGTH_SHORT);
-                toast.setGravity( Gravity.CENTER, 0, 0);
-                toast.show();
+                //Toast toast = Toast
+               //         .makeText(WelcomeActivity.this, "RESULT_OK", Toast.LENGTH_SHORT);
+               // toast.setGravity( Gravity.CENTER, 0, 0);
+               // toast.show();
             } else {
                 PreferenceManager.getDefaultSharedPreferences(this).edit()
                         .putBoolean(PREF_KEY_FIRST_START, true)
                         .apply();
                 //User cancelled the intro so we'll finish this activity too.
-                Toast toast = Toast
-                        .makeText(WelcomeActivity.this, "RESULT_NOT_OK", Toast.LENGTH_SHORT);
-                toast.setGravity(Gravity.CENTER, 0, 0);
-                toast.show();
-                finish();
+                //Toast toast = Toast
+               //         .makeText(WelcomeActivity.this, "RESULT_NOT_OK", Toast.LENGTH_SHORT);
+               // toast.setGravity(Gravity.CENTER, 0, 0);
+               // toast.show();
+               // finish();
             }
         }
     }

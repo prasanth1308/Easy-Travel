@@ -66,6 +66,8 @@ public class WelcomeFragment extends Fragment implements View.OnClickListener {
 
         }
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(intent);}
+        startActivity(intent);
+
     }
+}
 

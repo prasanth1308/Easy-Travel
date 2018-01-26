@@ -47,11 +47,15 @@ dependencies {
     compile 'com.heinrichreimersoftware:material-intro:1.6.2'
     compile "com.andkulikov:transitionseverywhere:1.7.8"
     implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+    compile 'com.wdullaer:materialdatetimepicker:3.5.0'
+    compile 'com.github.ch-muhammad-adil:MaterialPickerDialog:1.0.3'
 
     def appCenterSdkVersion = '1.1.0'
     compile "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
     compile "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
 }
+
+
 
 
 

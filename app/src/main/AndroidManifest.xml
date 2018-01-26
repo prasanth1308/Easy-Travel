@@ -24,6 +24,10 @@
             android:label="@string/title_activity_login"
             android:theme="@style/AppTheme" />
         <activity
+            android:name=".ForgetPasswordActivity"
+            android:label="@string/title_activity_forget_password"
+            android:theme="@style/AppTheme" />
+        <activity
             android:name=".SignUpActivity"
             android:label="@string/title_activity_sign_up"
             android:theme="@style/AppTheme"></activity>
