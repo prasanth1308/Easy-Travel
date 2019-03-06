@@ -23,7 +23,7 @@ public class AppIntroActivity extends IntroActivity {
         setFullscreen(true);
         super.onCreate(savedInstanceState);
 
-        setButtonBackVisible(true);
+        setButtonBackVisible(false);
         setButtonNextVisible(true);
         setButtonCtaVisible(false);
         setButtonCtaTintMode(BUTTON_CTA_TINT_MODE_BACKGROUND);
@@ -42,7 +42,7 @@ public class AppIntroActivity extends IntroActivity {
         addSlide(new SimpleSlide.Builder()
                 .title(R.string.title_canteen_intro1)
                 .description(R.string.description_canteen_intro1)
-                .image(R.drawable.art_canteen_intro1)
+                .image(R.drawable.train_mini)
                 .background(R.color.color_canteen)
                 .backgroundDark(R.color.color_dark_canteen)
                 .layout(R.layout.activity_app_intro)
@@ -51,7 +51,7 @@ public class AppIntroActivity extends IntroActivity {
         addSlide(new SimpleSlide.Builder()
                 .title(R.string.title_canteen_intro2)
                 .description(R.string.description_canteen_intro2)
-                .image(R.drawable.art_canteen_intro2)
+                .image(R.drawable.hotel_mini)
                 .background(R.color.color_canteen)
                 .backgroundDark(R.color.color_dark_canteen)
                 .layout(R.layout.activity_app_intro)
@@ -60,13 +60,13 @@ public class AppIntroActivity extends IntroActivity {
         addSlide(new SimpleSlide.Builder()
                 .title(R.string.title_canteen_intro3)
                 .description(R.string.description_canteen_intro3)
-                .image(R.drawable.art_canteen_intro3)
+                .image(R.drawable.taxi_mini)
                 .background(R.color.color_canteen)
                 .backgroundDark(R.color.color_dark_canteen)
                 .layout(R.layout.activity_app_intro)
                 .build());
 
-        autoplay(2500, INFINITE);
+        autoplay(5000, INFINITE);
 
         setButtonCtaClickListener(new View.OnClickListener() {
 

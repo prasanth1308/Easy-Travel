@@ -23,9 +23,9 @@
   -->
 
 <resources>
-    <color name="color_primary">#E91E63</color>
-    <color name="color_primary_dark">#C2185B</color>
-    <color name="color_accent">#00E676</color>
+    <color name="color_primary">#d1cccc</color>
+    <color name="color_primary_dark">#a9a5a5</color>
+    <color name="color_accent">#5ea2be</color>
 
     <color name="color_material_metaphor">#039BE5</color>
     <color name="color_material_bold">#EC407A</color>
@@ -34,7 +34,7 @@
     <color name="color_permissions">#FFEB3B</color>
     <color name="color_custom_fragment_1">#E64A19</color>
     <color name="color_custom_fragment_2">#3F51B5</color>
-    <color name="color_canteen">#fdfdfd</color>
+    <color name="color_canteen">#f7f7ff</color>
 
     <color name="color_dark_material_metaphor">#0277BD</color>
     <color name="color_dark_material_bold">#D81B60</color>
@@ -43,5 +43,22 @@
     <color name="color_dark_permissions">#FBC02D</color>
     <color name="color_dark_custom_fragment_1">#BF360C</color>
     <color name="color_dark_custom_fragment_2">#303F9F</color>
-    <color name="color_dark_canteen">#ebeef0</color>
+    <color name="color_dark_canteen">#e8e8f2</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffff</color>
+    <color name="activeIndicatorColor">#5ea2be</color>
+    <color name="InActiveIndicatorColor">#8fd5f2</color>
+    <color name="colorOnBoardTitle">#004278</color>
+    <color name="colorOnBoardDescription">#7b7b7b</color>
+    <color name="solid_one">#4abc96</color>
+    <color name="solid_two">#357180</color>
+    <color name="solid_three">#ffce00</color>
+    <color name="grey">#e0e0e0</color>
+    <color name="DrakGrey">#a9a5a5</color>
+    <color name="errorMessage">#ea0a24</color>
+    <color name="floatingLabel">#ff770f</color>
 </resources>
