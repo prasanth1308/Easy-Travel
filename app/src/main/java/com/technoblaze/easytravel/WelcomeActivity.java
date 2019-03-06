@@ -74,14 +74,17 @@ public class WelcomeActivity extends AppCompatActivity {
                 .commit();
 
 
-        if (firstStart) {
-            Intent intent = new Intent(this, AppIntroActivity.class);
-            startActivityForResult(intent, REQUEST_CODE_INTRO);
-        } else {
-            // Check if user is signed in (non-null) and update UI accordingly.
-            FirebaseUser currentUser = fireAuth.getCurrentUser();
-            updateUI(currentUser);
-        }
+//        if (firstStart) {
+//            Intent intent = new Intent(this, AppIntroActivity.class);
+//            startActivityForResult(intent, REQUEST_CODE_INTRO);
+//        } else {
+//            // Check if user is signed in (non-null) and update UI accordingly.
+//            FirebaseUser currentUser = fireAuth.getCurrentUser();
+//            updateUI(currentUser);
+//        }
+
+        FirebaseUser currentUser = fireAuth.getCurrentUser();
+        updateUI(currentUser);
     }
 
     private void updateUI(FirebaseUser user) {
